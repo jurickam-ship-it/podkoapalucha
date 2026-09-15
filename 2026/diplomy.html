@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diplomy — PodkoApalucha č. 2</title>
+  <style>
+    :root {
+      --les-tmava: #1f3d2b;
+      --les-stredni: #2e5d3f;
+      --mech: #7cb342;
+      --slunce: #f4c430;
+      --kura: #6d4c33;
+      --krem: #f5f0e1;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+      background: #ddd;
+      padding: 1rem;
+    }
+
+    /* Ovládací lišta — netiskne se */
+    .ovladani {
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      text-align: center;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+    }
+    .ovladani p { color: #555; margin-bottom: 0.6rem; font-size: 0.95rem; }
+    .ovladani button {
+      background: var(--les-stredni);
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .ovladani button:hover { background: var(--les-tmava); }
+    .ovladani a { color: var(--les-stredni); display:block; margin-top:0.6rem; }
+
+    /* Jeden diplom = A5 na výšku, 2 na A4 stránku */
+    .diplom {
+      width: 190mm;
+      height: 138mm;
+      margin: 0 auto 10mm;
+      background: var(--krem);
+      border: 4px double var(--les-stredni);
+      border-radius: 8px;
+      padding: 10mm;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .diplom .roh {
+      position: absolute;
+      font-size: 2rem;
+    }
+    .diplom .roh.tl { top: 6mm; left: 8mm; }
+    .diplom .roh.tr { top: 6mm; right: 8mm; }
+    .diplom .roh.bl { bottom: 6mm; left: 8mm; }
+    .diplom .roh.br { bottom: 6mm; right: 8mm; }
+
+    .diplom .titul {
+      font-size: 2.4rem;
+      color: var(--les-tmava);
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .diplom .podnadpis {
+      font-size: 1rem;
+      color: var(--kura);
+      margin-bottom: 1.2rem;
+    }
+    .diplom .pro { font-size: 1.1rem; color: #444; }
+    .diplom .jmeno {
+      font-size: 3rem;
+      color: var(--mech);
+      font-weight: bold;
+      margin: 0.5rem 0 1rem;
+      border-bottom: 3px solid var(--slunce);
+      padding: 0 1rem 0.3rem;
+    }
+    .diplom .text {
+      font-size: 1.05rem;
+      color: #333;
+      max-width: 150mm;
+      line-height: 1.5;
+    }
+    .diplom .paticka {
+      margin-top: 1.2rem;
+      font-size: 0.95rem;
+      color: var(--les-stredni);
+      font-weight: bold;
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .ovladani { display: none; }
+      .diplom {
+        box-shadow: none;
+        page-break-after: always;
+        margin: 0 auto;
+      }
+      .diplom:last-child { page-break-after: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ovladani">
+    <p>Vytiskni diplomy (Ctrl+P / ⌘+P). Vejdou se dva na jednu stránku A4.</p>
+    <p>Jména změníš přímo v tomto souboru — hledej text „ZMĚŇ JMÉNO".</p>
+    <button onclick="window.print()">🖨️ Vytisknout diplomy</button>
+    <a href="index.html">← Zpět na ročník 2026</a>
+  </div>
+
+  <!-- Jedno dítě = jeden blok .diplom. Změň jen text v .jmeno. -->
+
+  <div class="diplom">
+    <span class="roh tl">🌲</span><span class="roh tr">🧝</span>
+    <span class="roh bl">🍄</span><span class="roh br">🌲</span>
+    <div class="titul">Zachránce lesa</div>
+    <div class="podnadpis">PodkoApalucha č. 2 · Tři Studně 2026</div>
+    <div class="pro">Tento diplom náleží statečnému dobrodruhovi</div>
+    <div class="jmeno">Stella</div>
+    <div class="text">
+      za odvahu v lese, splnění všech úkolů skřítků
+      a osvobození skřítka Studánka. Les ti děkuje!
+    </div>
+    <div class="paticka">🏅 Lesní skřítci od Tří Studní</div>
+  </div>
+
+  <div class="diplom">
+    <span class="roh tl">🌲</span><span class="roh tr">🧝</span>
+    <span class="roh bl">🍄</span><span class="roh br">🌲</span>
+    <div class="titul">Zachránce lesa</div>
+    <div class="podnadpis">PodkoApalucha č. 2 · Tři Studně 2026</div>
+    <div class="pro">Tento diplom náleží statečnému dobrodruhovi</div>
+    <div class="jmeno">Sofinka</div>
+    <div class="text">
+      za odvahu v lese, splnění všech úkolů skřítků
+      a osvobození skřítka Studánka. Les ti děkuje!
+    </div>
+    <div class="paticka">🏅 Lesní skřítci od Tří Studní</div>
+  </div>
+
+  <div class="diplom">
+    <span class="roh tl">🌲</span><span class="roh tr">🧝</span>
+    <span class="roh bl">🍄</span><span class="roh br">🌲</span>
+    <div class="titul">Zachránce lesa</div>
+    <div class="podnadpis">PodkoApalucha č. 2 · Tři Studně 2026</div>
+    <div class="pro">Tento diplom náleží statečnému dobrodruhovi</div>
+    <div class="jmeno">Valča</div>
+    <div class="text">
+      za odvahu v lese, splnění všech úkolů skřítků
+      a osvobození skřítka Studánka. Les ti děkuje!
+    </div>
+    <div class="paticka">🏅 Lesní skřítci od Tří Studní</div>
+  </div>
+
+  <div class="diplom">
+    <span class="roh tl">🌲</span><span class="roh tr">🧝</span>
+    <span class="roh bl">🍄</span><span class="roh br">🌲</span>
+    <div class="titul">Zachránce lesa</div>
+    <div class="podnadpis">PodkoApalucha č. 2 · Tři Studně 2026</div>
+    <div class="pro">Tento diplom náleží statečnému dobrodruhovi</div>
+    <div class="jmeno">Tobík</div>
+    <div class="text">
+      za odvahu v lese, splnění všech úkolů skřítků
+      a osvobození skřítka Studánka. Les ti děkuje!
+    </div>
+    <div class="paticka">🏅 Lesní skřítci od Tří Studní</div>
+  </div>
+
+  <div class="diplom">
+    <span class="roh tl">🌲</span><span class="roh tr">🧝</span>
+    <span class="roh bl">🍄</span><span class="roh br">🌲</span>
+    <div class="titul">Zachránce lesa</div>
+    <div class="podnadpis">PodkoApalucha č. 2 · Tři Studně 2026</div>
+    <div class="pro">Ten nejmenší, ale stejně statečný dobrodruh</div>
+    <div class="jmeno">Míša</div>
+    <div class="text">
+      za odvahu v lese, každou přinesenou šišku
+      a osvobození skřítka Studánka. Les ti děkuje!
+    </div>
+    <div class="paticka">🏅 Lesní skřítci od Tří Studní</div>
+  </div>
+
+</body>
+</html>

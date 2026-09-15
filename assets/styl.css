@@ -1,0 +1,267 @@
+/* PodkoApalucha — sdílený styl */
+
+:root {
+  --les-tmava: #1f3d2b;
+  --les-stredni: #2e5d3f;
+  --les-svetla: #4a8b5c;
+  --mech: #7cb342;
+  --slunce: #f4c430;
+  --kura: #6d4c33;
+  --kura-svetla: #8d6e52;
+  --krem: #f5f0e1;
+  --krem-tmavy: #e8dfc8;
+  --text: #2b2b2b;
+  --stin: rgba(31, 61, 43, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--krem);
+  line-height: 1.6;
+}
+
+/* Pozadí s jemným lesním přechodem */
+body.rocnik,
+body.rozcestnik {
+  background:
+    radial-gradient(ellipse at top, rgba(124, 179, 66, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--krem) 0%, var(--krem-tmavy) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.obal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* Hlavička */
+header.hlavicka {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header.hlavicka .strom {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+header.hlavicka h1 {
+  font-size: 2.6rem;
+  color: var(--les-tmava);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+header.hlavicka .podtitul {
+  font-size: 1.2rem;
+  color: var(--les-stredni);
+  font-weight: bold;
+}
+
+header.hlavicka .misto {
+  font-size: 1rem;
+  color: var(--kura);
+  margin-top: 0.3rem;
+}
+
+/* Karty */
+.karty {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.karta {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px var(--stin);
+  border-top: 5px solid var(--mech);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+}
+
+.karta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--stin);
+}
+
+.karta .ikona {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.karta h3 {
+  color: var(--les-tmava);
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.karta p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Sekce */
+section.blok {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 16px var(--stin);
+}
+
+section.blok h2 {
+  color: var(--les-tmava);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--mech);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+section.blok h3 {
+  color: var(--les-stredni);
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+section.blok p {
+  margin-bottom: 0.8rem;
+}
+
+section.blok ul,
+section.blok ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+section.blok li {
+  margin-bottom: 0.4rem;
+}
+
+/* Harmonogram tabulka */
+.harmonogram {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.harmonogram th,
+.harmonogram td {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--krem-tmavy);
+}
+
+.harmonogram th {
+  background: var(--les-stredni);
+  color: #fff;
+}
+
+.harmonogram tr:nth-child(even) td {
+  background: var(--krem);
+}
+
+.harmonogram .cas {
+  font-weight: bold;
+  color: var(--les-stredni);
+  white-space: nowrap;
+}
+
+/* Úkoly */
+.ukol {
+  background: var(--krem);
+  border-left: 5px solid var(--slunce);
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.ukol h3 {
+  margin-top: 0;
+  color: var(--les-tmava);
+}
+
+.ukol .detail {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.2rem 0;
+}
+
+.ukol .misa {
+  background: rgba(244, 196, 48, 0.2);
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Odznaky obtížnosti */
+.znacka {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.znacka.bila { background: #eee; color: #555; }
+.znacka.zelena { background: var(--mech); color: #fff; }
+
+/* Navigace zpět */
+.zpet {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--les-stredni);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.zpet:hover { text-decoration: underline; }
+
+/* Patička */
+footer.paticka {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--kura);
+  font-size: 0.9rem;
+}
+
+/* Tlačítka tisk */
+.tlacitko {
+  display: inline-block;
+  background: var(--les-stredni);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tlacitko:hover { background: var(--les-tmava); }
+
+@media (max-width: 600px) {
+  header.hlavicka h1 { font-size: 2rem; }
+  .obal { padding: 1rem 1rem 3rem; }
+  section.blok { padding: 1.2rem; }
+}
