@@ -203,14 +203,6 @@ section.blok li {
   margin: 0.2rem 0;
 }
 
-.ukol .misa {
-  background: rgba(244, 196, 48, 0.2);
-  border-radius: 8px;
-  padding: 0.4rem 0.7rem;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-}
-
 /* Odznaky obtížnosti */
 .znacka {
   display: inline-block;
