@@ -59,11 +59,20 @@
       <h2>🎧 Jak na to</h2>
       <p>Otevři <a href="https://suno.com" target="_blank" rel="noopener">suno.com</a>, zapni <strong>Custom Mode</strong>.</p>
       <ol>
-        <li>Do pole <strong>Lyrics</strong> vlož text písně.</li>
+        <li>Do pole <strong>Lyrics</strong> vlož celý text písně (i se značkami <code>[Verse]</code>, <code>[Chorus]</code>).</li>
         <li>Do pole <strong>Style / Prompt</strong> vlož prompt (zelený rámeček).</li>
         <li>Do pole <strong>Title</strong> dej název skladby.</li>
-        <li>Vygeneruj, vyber lepší ze dvou verzí, stáhni MP3.</li>
+        <li>Vygeneruj, poslechni obě verze, stáhni lepší MP3.</li>
       </ol>
+      <h3>Aby písnička nebyla krátká</h3>
+      <ul>
+        <li>🎵 Používej model <strong>v4.5 nebo novější</strong>. Zvládne skladbu přes 4 minuty.</li>
+        <li>📝 <strong>Víc textu = delší píseň.</strong> Krátký text Suno zacyklí nebo utne. Tyto texty jsou už napsané na plnou stopu (2–3 min).</li>
+        <li>🏷️ Nech ve textu <strong>strukturní značky</strong> — <code>[Intro]</code>, <code>[Verse]</code>, <code>[Chorus]</code>, <code>[Bridge]</code>, <code>[Outro]</code>. Suno podle nich staví stavbu skladby.</li>
+        <li>🔁 Refrén klidně zopakuj 3× — dělá to píseň chytlavější a delší.</li>
+        <li>🎚️ Když je stopa moc krátká, dej <strong>Extend</strong> (prodloužit) a navaž další slokou nebo refrénem.</li>
+        <li>🇨🇿 Jména dětí Suno občas vysloví divně. Když to zkomolí, vygeneruj znovu — každá verze je jiná.</li>
+      </ul>
       <p>Prompty jsou anglicky — Suno na ně reaguje nejlépe. Texty jsou česky.</p>
     </section>
 
@@ -73,8 +82,12 @@
       <div class="pisen">
         <span class="stitek">Chytlavá · u ohně · napříč ročníky</span>
         <h3>„PodkoApalucha"</h3>
-        <div class="prompt">children's sing-along folk anthem, acoustic guitar and hand claps, warm campfire feel, cheerful major key, simple catchy melody, kids and dads singing together, gentle tempo 100 BPM, Czech folk, uplifting</div>
-        <div class="text-pisne">[Verse]
+        <div class="prompt">upbeat children's sing-along folk anthem, bright acoustic guitar, foot-stomps and hand claps, warm campfire feel, cheerful major key, big catchy singable chorus, a choir of kids and dads singing together, tin whistle and light hand percussion, tempo 108 BPM, Czech folk, joyful and uplifting, full-length arrangement with intro, two verses, repeated chorus and a bridge</div>
+        <div class="text-pisne">[Intro]
+Hola, hola, PodkoApalucha!
+Hola, hola, les už na nás čeká!
+
+[Verse 1]
 Batohy na zádech, jde se do lesa,
 táta i děti, dobrodružství se nese.
 Mašličky bílé nám ukážou směr,
@@ -86,7 +99,7 @@ košík si vezmi a se mnou pojď dál!
 PodkoApalucha, zpívej si,
 les je náš kamarád, tak se ho neboj ty!
 
-[Verse]
+[Verse 2]
 Šišky a klacíky, studánka, mech,
 skřítci nás vedou, ať nejsme na dech.
 Splníme úkoly, každý z nás je král,
@@ -96,7 +109,23 @@ Pupenec s Klížkem nás vítají dál!
 PodkoApalucha, hola hej,
 košík si vezmi a se mnou pojď dál!
 PodkoApalucha, zpívej si,
-les je náš kamarád, tak se ho neboj ty!</div>
+les je náš kamarád, tak se ho neboj ty!
+
+[Bridge]
+Stella, Sofinka, Valča běží,
+Tobík, Míša, nikdo neváhá!
+Ruku v ruce celá parta,
+jeden za druhého, to je pravá výhra!
+
+[Chorus]
+PodkoApalucha, hola hej,
+košík si vezmi a se mnou pojď dál!
+PodkoApalucha, zpívej si,
+les je náš kamarád, tak se ho neboj ty!
+
+[Outro]
+Hola, hola, PodkoApalucha!
+Hola, hola, ať žije náš les!</div>
       </div>
     </section>
 
@@ -106,16 +135,40 @@ les je náš kamarád, tak se ho neboj ty!</div>
       <div class="pisen">
         <span class="stitek">Napínavá → oslavná · moment otevření truhly</span>
         <h3>„Klíč od truhly"</h3>
-        <div class="prompt">epic but child-friendly adventure song, starts mysterious and quiet with soft strings, builds to a triumphant joyful chorus with drums and bells, magical forest fantasy, a lost key and an opening treasure chest, sense of victory and friendship, Czech, tempo rising from 80 to 120 BPM, celebratory ending</div>
+        <div class="prompt">epic but child-friendly adventure song, starts mysterious and quiet with soft strings and a music box, slowly builds through the verses, explodes into a triumphant joyful chorus with drums, bells and a kids choir, magical forest fantasy about a lost key and an opening treasure chest, feeling of teamwork, victory and friendship, Czech, tempo rising from 78 to 122 BPM, full-length with intro, verses, pre-chorus, big repeated chorus, bridge and celebratory outro</div>
         <div class="text-pisne">[Intro — tiše]
 Les je tichý, oheň hřeje,
 Pupenec svůj klíč už dávno nemá.
+Truhla spí a čeká, kdo ji vzbudí,
+kdo je statečný a nezabloudí.
 
-[Verse]
+[Verse 1]
 Klížek šibal klíč mu schoval do tmy,
-truhla je zamčená, poklad v ní spí.
+myslel to jen jako legraci, ne zle.
+Truhla je zamčená, poklad v ní spí,
+kdo ho najde, ten se nebojí!
+
+[Verse 2]
 Ale my jsme tu, statečná parta,
-projdeme lesem, ať je cesta sebevíc dlouhá!
+Stella a Sofinka jdou první do startu.
+Valča, Tobík, Míša, nikdo se neztratí,
+projdeme lesem, ať se cesta zkrátí!
+
+[Pre-Chorus — narůstá]
+Chytneme se za ruce, řekneme to spolu,
+kouzlo se probudí, klíč se vrátí domů!
+
+[Chorus — oslavně]
+Klíč je zpátky, truhla se otvírá!
+Zvoneček zvoní, poklad v ní zazáří!
+Klížek se směje, už není sám,
+Pupenec děkuje, ať žije les i vám!
+
+[Verse 3]
+Splnili jsme úkoly, jeden po druhém,
+košík je plný, jdeme s úsměvem.
+Klížek se omlouvá, podává nám dlaň,
+kamarádi v lese — to je poklad sám!
 
 [Pre-Chorus — narůstá]
 Chytneme se za ruce, řekneme to spolu,
@@ -129,7 +182,9 @@ Pupenec děkuje, ať žije les i vám!
 
 [Outro]
 Hola hou, hola hou,
-truhla je náš, ať žije parta znovu!</div>
+truhla je náš, ať žije parta znovu!
+Hola hou, hola hou,
+Stella, Sofinka, Valča, Tobík, Míša — hurá!</div>
       </div>
     </section>
 
@@ -139,16 +194,22 @@ truhla je náš, ať žije parta znovu!</div>
       <div class="pisen">
         <span class="stitek">Klidná · na pozadí · spíš instrumentální</span>
         <h3>„Les u Tří Studní"</h3>
-        <div class="prompt">gentle instrumental forest ambience, soft acoustic fingerpicking guitar, tin whistle, distant birdsong and flowing water, magical and calm, dreamy fairytale mood, no vocals or very soft humming, slow 70 BPM, Celtic-folk feel, cozy</div>
-        <div class="text-pisne">(instrumentální — bez zpěvu, jen jemné pohvizdování)
+        <div class="prompt">gentle instrumental forest ambience, soft acoustic fingerpicking guitar, tin whistle and light harp, distant birdsong and softly flowing water, magical calm dreamy fairytale mood, mostly instrumental with occasional soft wordless humming, slow 68 BPM, Celtic-folk feel, cozy and warm, long ambient track suitable for background</div>
+        <div class="text-pisne">(instrumentální — hlavně bez zpěvu, jen jemné pohvizdování a broukání)
 
-Pokud chceš přidat tichý refrén:
+Když chceš občas přidat tichý broukaný refrén:
 
 [Soft hum]
 Lá-lá, les nás vítá,
 lá-lá, voda zpívá,
 studánka se třpytí,
-skřítci tiše bdí…</div>
+skřítci tiše bdí…
+
+[Soft hum]
+Lá-lá, mech tu voní,
+lá-lá, větve kloní,
+Pupenec tu hlídá,
+truhla tiše spí…</div>
       </div>
     </section>
 
@@ -158,8 +219,12 @@ skřítci tiše bdí…</div>
       <div class="pisen">
         <span class="stitek">Rytmická · pochod mezi zastávkami</span>
         <h3>„Šlapem dál"</h3>
-        <div class="prompt">upbeat children's marching song, steady walking rhythm, stomping feet and simple drum beat, playful whistling, energetic and fun, easy to march to, Czech kids choir, tempo 110 BPM, happy outdoor adventure</div>
-        <div class="text-pisne">[Verse]
+        <div class="prompt">upbeat children's marching song, steady walking rhythm, stomping feet and a simple bright drum beat, playful whistling, energetic and fun, very easy to march and clap to, Czech kids choir, tempo 112 BPM, happy outdoor adventure, full-length with intro, three verses and a repeated chorus</div>
+        <div class="text-pisne">[Intro]
+Levá, pravá! Levá, pravá!
+Šlapem dál, ať cesta plave!
+
+[Verse 1]
 Levá, pravá, levá, pravá,
 lesní cesta je fakt zábava!
 Košík nesu, šišku mám,
@@ -171,11 +236,23 @@ kdo se bojí, ten je král!
 Levá, pravá, hola hej,
 za dobrodružstvím pospíchej!
 
-[Verse]
+[Verse 2]
 Přes kořínky, kolem stromů,
 Pupenec nás vede k svému domu.
 Ještě kousek, vydržíš,
 za zatáčkou překvápko uvidíš!
+
+[Chorus]
+Šlapem dál, šlapem dál,
+kdo se bojí, ten je král!
+Levá, pravá, hola hej,
+za dobrodružstvím pospíchej!
+
+[Verse 3]
+Stella, Sofinka vepředu jdou,
+Valča, Tobík, Míša za nimi hou!
+Celá parta ťape lesem,
+každý krok je novým plesem!
 
 [Chorus]
 Šlapem dál, šlapem dál,
