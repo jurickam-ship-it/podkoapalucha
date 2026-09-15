@@ -13,7 +13,8 @@ podkoapalucha/
     ├── pribeh.html     příběh na tisk (Ctrl+P)
     ├── diplomy.html    diplomy na tisk (Ctrl+P)
     ├── hudba.html      texty a Suno prompty
-    └── hudba/          MP3 soubory písní
+    ├── vypravec.html   texty hlášení vypravěče + návod na ElevenLabs
+    └── hudba/          MP3 soubory písní a hlášení vypravěče
 ```
 
 ## Nový ročník

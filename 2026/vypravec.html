@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vypravěč (ElevenLabs) — PodkoApalucha č. 2</title>
+  <link rel="stylesheet" href="../assets/styl.css">
+  <style>
+    .hlaseni {
+      background: var(--krem);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid var(--mech);
+    }
+    .hlaseni h3 { margin-top: 0; }
+    .stitek {
+      display: inline-block;
+      background: var(--slunce);
+      color: var(--les-tmava);
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      margin-bottom: 0.5rem;
+    }
+    .text-hlaseni {
+      background: #fff;
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      white-space: pre-wrap;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+    .navod {
+      background: var(--les-tmava);
+      color: #d7f0dd;
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    .navod h2 { color: #fff; margin-top: 0; }
+    .navod ol { margin: 0.6rem 0 0 1.2rem; }
+    .navod li { margin-bottom: 0.4rem; }
+    .navod code {
+      background: rgba(255,255,255,0.15);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+    }
+    .navod a { color: var(--slunce); }
+  </style>
+</head>
+<body class="rocnik">
+  <div class="obal">
+    <a class="zpet" href="index.html">← Zpět na ročník 2026</a>
+
+    <header class="hlavicka">
+      <div class="strom">🎙️🌲</div>
+      <h1>Vypravěč</h1>
+      <p class="podtitul">Mluvená hlášení pro celý den</p>
+    </header>
+
+    <!-- NÁVOD -->
+    <div class="navod">
+      <h2>🎙️ Jak vyrobit hlas vypravěče</h2>
+      <p>Hlas nadabuje umělá inteligence <a href="https://elevenlabs.io" target="_blank" rel="noopener">ElevenLabs</a>. Zvládne to zdarma.</p>
+      <ol>
+        <li>Otevři <a href="https://elevenlabs.io" target="_blank" rel="noopener">elevenlabs.io</a> a přihlas se.</li>
+        <li>Jdi do <strong>Text to Speech</strong>.</li>
+        <li>Vyber český hlas. Dej <code>Language: Czech</code> a vyber hlas, který zní mile (například Charlotte nebo Adam).</li>
+        <li>Nastav <code>Speed</code> trochu pomaleji. Děti musí stihnout poslouchat.</li>
+        <li>Zkopíruj text jednoho hlášení dole a vlož ho.</li>
+        <li>Klikni <strong>Generate</strong> a poslechni si to.</li>
+        <li>Stáhni <strong>MP3</strong> a ulož ho pod přesným názvem u každého hlášení.</li>
+        <li>Nahraj MP3 do složky <code>2026/hudba/</code>. Přehrávač se pak sám objeví na této stránce.</li>
+      </ol>
+      <p><strong>Tip:</strong> Nech u všech hlášení stejný hlas. Vypravěč pak zní jako jedna postava.</p>
+      <p><strong>Tip:</strong> Na místě to pusť z telefonu nebo z malého repráčku. Text si můžeš i sám přečíst nahlas, hlas z ElevenLabs je jen pomůcka.</p>
+    </div>
+
+    <!-- 1. ÚVOD U OHNĚ -->
+    <section class="blok">
+      <h2>Úvod u ohně (pátek večer)</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-1-uvod.mp3</span>
+        <h3>Dětem u ohně řekne, o čem to celé je.</h3>
+        <audio controls preload="none" src="hudba/vypravec-1-uvod.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">Ahoj děti! Poslouchejte, mám pro vás příběh.
+
+Tady v lese u Tří Studní žije hodný skřítek Pupenec. Hlídá starou truhlu s pokladem a klíč od ní nosí na krku.
+
+Ale stala se mrzutost. Šotek Klížek je šibal a rád se schovává. V noci vzal Pupenci klíč a schoval ho v lese. Truhla je teď zamčená a Pupenec je smutný.
+
+Zítra vyrazíme do lesa. Splníme úkoly lesních skřítků. Když je zvládneme, klíč se nám vrátí a truhlu společně otevřeme.
+
+Tak dobře se vyspěte, dobrodruzi. Zítra nás čeká les!</div>
+      </div>
+    </section>
+
+    <!-- 2. START STEZKY -->
+    <section class="blok">
+      <h2>Start stezky (ráno)</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-2-start.mp3</span>
+        <h3>Odstartuje cestu a řekne, co děti čeká.</h3>
+        <audio controls preload="none" src="hudba/vypravec-2-start.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">Dobré ráno, statečná parto!
+
+Před vámi je lesní stezka. Na cestě je pět úkolů od skřítků. Značí je bílé mašličky, takže hledejte mašličky a jděte za nimi.
+
+Splňte všechny úkoly. Za každý splněný úkol jste blíž ke klíči od truhly.
+
+Batohy na záda, košík do ruky. Jdeme na to!</div>
+      </div>
+    </section>
+
+    <!-- 3. STANOVIŠTĚ 1 -->
+    <section class="blok">
+      <h2>Stanoviště 1 · Uklidit cestičku</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-3-uklid.mp3</span>
+        <h3>První úkol: uklidit skřítkům pěšinku.</h3>
+        <audio controls preload="none" src="hudba/vypravec-3-uklid.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">Zastavte se, tady je první úkol!
+
+Skřítkům spadaly na pěšinku větve a nemůžou projít. Pomozte jim cestičku uklidit.
+
+Každý seberte dvě nebo tři větve a dejte je na hromadu ke straně. Až bude pěšinka volná, úkol je splněný.
+
+Do práce, ať to skřítkům pěkně vyčistíme!</div>
+      </div>
+    </section>
+
+    <!-- 4. STANOVIŠTĚ 2 -->
+    <section class="blok">
+      <h2>Stanoviště 2 · Kouzelná studánka</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-4-studanka.mp3</span>
+        <h3>Druhý úkol: napít se a nabrat síly.</h3>
+        <audio controls preload="none" src="hudba/vypravec-4-studanka.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">Výborně! Jste u Kouzelné studánky.
+
+Skřítci tu schovali lahvičky s kouzelnou limonádou. Najděte je a napijte se.
+
+Kouzelná limonáda dodá sílu na další cestu. Chvilku si odpočiňte, sedněte si a naberte dech.
+
+Až budete připravení, jdeme dál!</div>
+      </div>
+    </section>
+
+    <!-- 5. STANOVIŠTĚ 3 -->
+    <section class="blok">
+      <h2>Stanoviště 3 · Domečky pro skřítky</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-5-domecky.mp3</span>
+        <h3>Třetí úkol: postavit skřítkům domečky.</h3>
+        <audio controls preload="none" src="hudba/vypravec-5-domecky.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">Tady bydlí skřítci, ale nemají kde spát.
+
+Postavte jim domečky. Každý přineste jeden klacík, jednu šišku a jeden kousek kůry. Táta pomůže se základem a vy domeček ozdobíte mechem a kamínky.
+
+Postavte dva domečky se stříškou. Skřítci budou mít radost a budou v teple.
+
+S chutí do stavění!</div>
+      </div>
+    </section>
+
+    <!-- 6. STANOVIŠTĚ 4 -->
+    <section class="blok">
+      <h2>Stanoviště 4 · Nasbírat šišky</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-6-sisky.mp3</span>
+        <h3>Čtvrtý úkol: nasbírat šišky do košíku.</h3>
+        <audio controls preload="none" src="hudba/vypravec-6-sisky.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">Teď budeme sbírat šišky!
+
+Rozhlédněte se kolem sebe. Nasbírejte do společného košíku alespoň deset velkých šišek.
+
+Šišky budeme potřebovat odpoledne na poslední zkoušku. Tak ať jich máme dost.
+
+Kdo najde největší šišku? Hledejte!</div>
+      </div>
+    </section>
+
+    <!-- 7. STANOVIŠTĚ 5 -->
+    <section class="blok">
+      <h2>Stanoviště 5 · Hod šiškami (odpoledne)</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-7-hod.mp3</span>
+        <h3>Pátý úkol: poslední zkouška, hod na cíl.</h3>
+        <audio controls preload="none" src="hudba/vypravec-7-hod.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">A je tu poslední zkouška, dobrodruzi!
+
+Vezměte nasbírané šišky. Před vámi je cíl. Házejte na něj šišky a trefte se.
+
+Když se dohromady trefíte alespoň čtyřikrát, dokázali jste, že jste šikovní a odvážní. Tím si zasloužíte klíč od truhly zpět.
+
+Připravte se, zamiřte a házejte!</div>
+      </div>
+    </section>
+
+    <!-- 8. FINÁLE -->
+    <section class="blok">
+      <h2>Velké finále (večer u ohně)</h2>
+      <div class="hlaseni">
+        <span class="stitek">Soubor: vypravec-8-finale.mp3</span>
+        <h3>Zaklínadlo, návrat klíče a otevření truhly.</h3>
+        <audio controls preload="none" src="hudba/vypravec-8-finale.mp3" style="width:100%; margin:0.6rem 0;"></audio>
+        <div class="text-hlaseni">Dokázali jste to! Všechny úkoly jsou splněné.
+
+Teď přišel čas na kouzlo. Chytněte se všichni za ruce kolem ohně. Společně nahlas řekneme zaklínadlo:
+
+Pupenče, Klížku, slyšte nás,
+splnili jsme úkol včas!
+Košík plný, klíč je zpátky —
+ať se truhla otevírá!
+
+A podívejte! Z lesa přibíhá Klížek. Nese klíč a omlouvá se, že si jen chtěl hrát. Pupenec bere klíč, zasune ho do zámku a otočí.
+
+Truhla se otvírá! Uvnitř čeká poklad pro každého z vás. Zasloužili jste si ho. Hurá!</div>
+      </div>
+    </section>
+
+    <footer class="paticka">
+      🎙️ PodkoApalucha č. 2 · Tři Studně 2026 🌲
+    </footer>
+  </div>
+</body>
+</html>
