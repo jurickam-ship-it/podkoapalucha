@@ -10,8 +10,10 @@ podkoapalucha/
 ├── assets/styl.css     sdílený styl
 └── 2026/               PodkoApalucha č. 2 — Tři Studně
     ├── index.html      program, úkoly, příběh
+    ├── pribeh.html     příběh na tisk (Ctrl+P)
     ├── diplomy.html    diplomy na tisk (Ctrl+P)
-    └── hudba.html      texty a Suno prompty
+    ├── hudba.html      texty a Suno prompty
+    └── hudba/          MP3 soubory písní
 ```
 
 ## Nový ročník

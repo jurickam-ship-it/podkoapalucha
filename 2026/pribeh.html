@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Příběh na tisk — PodkoApalucha č. 2</title>
+  <style>
+    :root {
+      --les-tmava: #1f3d2b;
+      --les-stredni: #2e5d3f;
+      --mech: #7cb342;
+      --slunce: #f4c430;
+      --kura: #6d4c33;
+      --krem: #f5f0e1;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+      background: #ddd;
+      padding: 1rem;
+      color: #2b2b2b;
+    }
+
+    /* Ovládací lišta — netiskne se */
+    .ovladani {
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      text-align: center;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+    }
+    .ovladani p { color: #555; margin-bottom: 0.6rem; font-size: 0.95rem; }
+    .ovladani button {
+      background: var(--les-stredni);
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .ovladani button:hover { background: var(--les-tmava); }
+    .ovladani a { color: var(--les-stredni); display: block; margin-top: 0.6rem; }
+
+    /* List A4 s příběhem */
+    .list {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: var(--krem);
+      border: 4px double var(--les-stredni);
+      border-radius: 8px;
+      padding: 22mm 20mm;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .list .roh {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .list h1 {
+      text-align: center;
+      color: var(--les-tmava);
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+    }
+    .list .podnadpis {
+      text-align: center;
+      color: var(--kura);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .list h2 {
+      color: var(--les-stredni);
+      font-size: 1.25rem;
+      margin: 1.4rem 0 0.5rem;
+      border-bottom: 2px solid var(--mech);
+      padding-bottom: 0.2rem;
+    }
+    .list p {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin-bottom: 0.9rem;
+      text-align: justify;
+    }
+    .list .postavy {
+      background: #fff;
+      border-left: 5px solid var(--slunce);
+      border-radius: 0 10px 10px 0;
+      padding: 0.9rem 1.2rem;
+      margin: 1rem 0;
+    }
+    .list .postavy p { margin-bottom: 0.5rem; text-align: left; }
+    .list .zaklinadlo {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--les-tmava);
+      text-align: center;
+      background: #fff;
+      border: 2px dashed var(--mech);
+      border-radius: 10px;
+      padding: 1.2rem;
+      margin: 1rem 0;
+      line-height: 1.8;
+    }
+    .list .paticka {
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: bold;
+      color: var(--les-stredni);
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .ovladani { display: none; }
+      .list {
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ovladani">
+    <p>Vytiskni příběh (Ctrl+P / ⌘+P). Přečti ho dětem u ohně v pátek večer.</p>
+    <button onclick="window.print()">🖨️ Vytisknout příběh</button>
+    <a href="index.html">← Zpět na ročník 2026</a>
+  </div>
+
+  <div class="list">
+    <div class="roh">🧝‍♂️🌲🗝️</div>
+    <h1>Příběh o Pupenci a klíči</h1>
+    <p class="podnadpis">PodkoApalucha č. 2 · Tři Studně 2026</p>
+
+    <div class="postavy">
+      <p>🧝 <strong>Pupenec</strong> — hodný lesní skřítek. Hlídá u Tří Studní starou truhlu s pokladem a klíč nosí na krku.</p>
+      <p>🍄 <strong>Klížek</strong> — šotek samotář a šibal. Miluje schovávačky. Není zlý, jen si moc rád hraje.</p>
+    </div>
+
+    <h2>Jak to celé začalo</h2>
+    <p>
+      Hluboko v lese u Tří Studní žije malý skřítek jménem <strong>Pupenec</strong>.
+      Je to hodný skřítek. Už mnoho a mnoho let hlídá starou dřevěnou truhlu.
+      Nikdo přesně neví, co je v ní schované, ale povídá se, že je to největší
+      lesní poklad. Klíč od truhly nosí Pupenec pořád na krku a nikdy ho nedá z ruky.
+    </p>
+    <p>
+      Kousek dál, v dutém stromě, bydlí šotek <strong>Klížek</strong>. Klížek je
+      samotář. Nemá moc kamarádů, a tak si celé dny hraje sám. Ze všeho nejvíc má
+      rád schovávačky. Schovává klobouky, schovává houby, schovává, na co přijde.
+    </p>
+
+    <h2>Ztracený klíč</h2>
+    <p>
+      Jednou v noci, když všichni spali, se Klížek tiše připlížil k Pupenci.
+      „To bude legrace," pomyslel si a opatrně mu z krku sundal klíč od truhly.
+      Utíkal s ním do lesa a schoval ho na tajné místo. Myslel to jen jako hru.
+    </p>
+    <p>
+      Ráno se ale Pupenec probudil a klíč nikde. Zkoušel truhlu otevřít, tlačil
+      a tahal, ale bez klíče se ani nehnula. Pupenec byl moc smutný. Poklad byl
+      zamčený a on nevěděl, co dělat.
+    </p>
+
+    <h2>Cesta plná úkolů</h2>
+    <p>
+      Klížek viděl, jak je Pupenec smutný, a bylo mu to líto. Ale styděl se přijít
+      a klíč jen tak vrátit. A tak vymyslel jinou věc. Rozmístil po lese úkoly od
+      lesních skřítků a nechal vzkaz: „Kdo projde celou stezku a splní všechny úkoly,
+      ten si klíč zaslouží zpět!"
+    </p>
+    <p>
+      A tak vyrazila do lesa statečná parta dětí. Uklidily skřítkům cestičku,
+      napily se z kouzelné studánky, postavily skřítkům domečky a nasbíraly plný
+      košík šišek. Šišky pak házely na cíl a ukázaly, jak jsou šikovné a odvážné.
+    </p>
+
+    <h2>Velké finále</h2>
+    <p>
+      Když byly všechny úkoly hotové, sešly se děti večer u ohně. Chytily se za
+      ruce a společně řekly kouzelné zaklínadlo:
+    </p>
+    <div class="zaklinadlo">
+      Pupenče, Klížku, slyšte nás,<br>
+      splnili jsme úkol včas!<br>
+      Košík plný, klíč je zpátky —<br>
+      ať se truhla otevírá!
+    </div>
+    <p>
+      V tu chvíli se z lesa ozval zvoneček. Přiběhl Klížek, v ruce držel klíč a
+      celý zrudlý se omluvil: „Promiňte, chtěl jsem si jen hrát. Nikdy jsem nikoho
+      nechtěl zarmoutit." Pupenec se usmál a klíč vzal. Zasunul ho do zámku,
+      otočil — a <strong>truhla se s cinknutím otevřela!</strong>
+    </p>
+    <p>
+      Uvnitř čekal poklad pro každé dítě. A Klížek? Ten pochopil něco důležitého.
+      Být s kamarády je mnohem lepší než se schovávat v lese o samotě. Od té doby
+      je z něj kamarád celé party.
+    </p>
+
+    <p class="paticka">🌲 A jestli nevyschly studánky, žijí tam šťastně dodnes. 🌲</p>
+  </div>
+
+</body>
+</html>
